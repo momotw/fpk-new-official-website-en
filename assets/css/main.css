@@ -2076,7 +2076,7 @@ p + p{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(90 200 245 / var(--tw-text-opacity));
+  color: rgb(61 99 221 / var(--tw-text-opacity));
 }
 
 .text-primary-color{
@@ -2466,7 +2466,7 @@ p + p{
   }
 
   .lg\:w-56{
-    width: 14rem;
+    width: 18rem;
   }
 
   .lg\:w-full{
