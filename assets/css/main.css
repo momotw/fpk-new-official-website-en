@@ -1035,7 +1035,7 @@ p + p{
   background-color: rgb(49 84 205 / var(--tw-bg-opacity));
 }
 
-#home{
+/* #home{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1050,7 +1050,7 @@ p + p{
       rgba(255, 255, 255, 0.025) 63%,
       rgba(255, 255, 255, 0.025) 100%
     );
-}
+} */
 
 .section-area{
   position: relative;
@@ -1765,7 +1765,7 @@ p + p{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(61 99 221 / var(--tw-bg-opacity));
+  background-color: rgb(90 200 245 / var(--tw-bg-opacity));
 }
 
 .bg-primary-color{
@@ -2076,7 +2076,7 @@ p + p{
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(61 99 221 / var(--tw-text-opacity));
+  color: rgb(90 200 245 / var(--tw-text-opacity));
 }
 
 .text-primary-color{
