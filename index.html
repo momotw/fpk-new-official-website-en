@@ -1278,12 +1278,13 @@
                   <!-- <h2 class="mb-3">聯絡我們</h2> -->
                 </div>
 
-                <form action="#" method="POST" class="flex flex-col gap-6">
+                <form id="contactForm" action="#" method="POST" class="flex flex-col gap-6">
                   <div class="row">
                     <div class="col-12 md:col-6">
                       <input
                         type="text"
                         name="name"
+                        id="name"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         placeholder="Name"
                         required
@@ -1294,6 +1295,7 @@
                       <input
                         type="email"
                         name="email"
+                        id="email"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         placeholder="Email"
                         required
@@ -1304,6 +1306,7 @@
                       <input
                         type="text"
                         name="phone"
+                        id="phone"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         placeholder="Phone"
                         required
@@ -1314,6 +1317,7 @@
                       <input
                         type="text"
                         name="subject"
+                        id="subject"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         placeholder="Subject"
                         required
@@ -1323,6 +1327,7 @@
                     <div class="col-12">
                       <textarea
                         name="message"
+                        id="message"
                         rows="5"
                         class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
                         placeholder="How can we help you?"
@@ -1334,6 +1339,7 @@
                       <div class="w-full text-center">
                         <button
                           type="submit"
+                          id="submitBtn"
                           class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10"
                         >
                           Send
@@ -1380,7 +1386,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
 
@@ -1399,7 +1405,7 @@
       // GLightBox
       GLightbox({
         selector: ".video-popup",
-        href: "https://www.youtube.com/watch?v=ZbCNCmavnsc",
+        href: "https://www.youtube.com/watch?v=fsa8_Sq96Lg",
         type: "video",
         source: "youtube",
         width: 900,
@@ -1408,7 +1414,7 @@
 
       GLightbox({
         selector: ".video-popup-DFM",
-        href: "https://www.youtube.com/watch?v=Ni2BViyDDlw",
+        href: "https://www.youtube.com/watch?v=qdPEgBt5pls",
         type: "video",
         source: "youtube",
         width: 900,

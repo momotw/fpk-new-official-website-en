@@ -247,3 +247,50 @@ if (st) {
     });
   });
 }
+
+$(document).ready(function() {
+  $('#contactForm').on('submit', function(e) {
+      e.preventDefault(); 
+      submitForm();
+  });
+});
+
+//contact us post
+function submitForm() 
+{
+  $('#submitBtn').prop('disabled', true).text('Sending');
+
+  $.ajax({
+    url: '../../api/homepage/contactUs',
+    type: 'POST',
+    data: {
+        Name: $('#name').val(),
+        Email: $('#email').val(),
+        Note: "Subject: " + $('#subject').val() + "\n" + 
+              "Site Lang: TW \n" + 
+              "Phone: " + $('#phone').val() + "\n" + 
+              "Message: " + $('#message').val(),
+        Source: 'TW Official Site'
+    },
+    timeout: 10000,
+    success: function(response) {
+        alert("Thank you for your message. After reviewing your message, a specialist will contact you.");
+        $('#contactForm')[0].reset();
+    },
+    error: function(xhr, status, error) {
+        let errorMsg = 'Send failed, please try again later.';
+        
+        if (status === 'timeout') {
+            errorMsg = 'The request timed out, please check the network connection.';
+        } else if (xhr.status === 422) {
+            const errors = JSON.parse(xhr.responseText);
+            errorMsg = 'Form validation error: ' + Object.values(errors).join(', ');
+        }
+        
+        alert(errorMsg);
+    },
+    complete: function() {
+        $('#submitBtn').prop('disabled', false).text('送出');
+    }
+  });
+}
