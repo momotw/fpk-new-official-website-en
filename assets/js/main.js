@@ -270,7 +270,7 @@ function submitForm()
               "Site Lang: TW \n" + 
               "Phone: " + $('#phone').val() + "\n" + 
               "Message: " + $('#message').val(),
-        Source: 'TW Official Site'
+        Source: 'EN Official Site'
     },
     timeout: 10000,
     success: function(response) {
@@ -290,7 +290,7 @@ function submitForm()
         alert(errorMsg);
     },
     complete: function() {
-        $('#submitBtn').prop('disabled', false).text('送出');
+        $('#submitBtn').prop('disabled', false).text('Send');
     }
   });
 }
